@@ -55,7 +55,6 @@ var valPass = new RegExp('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za
 (valUser.exec(user) != null)
 ? console.log('Tu nombre cumple con el requisito')
 : console.log('Tu nombre no cumple con el requisito...');
-
-(valPass == true)
+(valPass.test(pass) == true)
 ? console.log('Tu contrasenea es muy fuerte!')
 : console.log('Alguien quiere ser suplantado...');
