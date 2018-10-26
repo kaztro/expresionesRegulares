@@ -32,3 +32,12 @@ var tested = myRe2.test('wwwcanales');
 var tested1 = myRe2.test('laweafome');
 console.log(tested); //true
 console.log(tested1); //false
+
+/* 
+Si lo que necesita provarse es una cadena de entrada que coincida con la expresion el metodo test es el indicado pues su valor
+de retorno es booleano.
+Cuando necesite trabajar con los grupos e indices coincidentes entonces test es el indicado.
+Entre estos dos metodos no importa mucho la velocidad o la eficiencia sino que se evalue la expresion.  
+*/
+
+var regexpr = new RegExp('', 'g');
